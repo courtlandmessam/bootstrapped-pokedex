@@ -20,16 +20,19 @@
         <div class="row">
 
           <!--Search-->
-          <div class="col-sm">
-            <input type="text" id="pokemon-request" placeholder="Enter Pokemon">
-            <button id="search-pokemon" type="button" name="button">Get Pokemon</button>
+          <div class="pokemon-search col-sm card ">
+            <div class="card-body">
+              <div> <input type="text" id="pokemon-request" placeholder="Enter Pokemon"> </div>
+              <div> <button id="search-pokemon" type="button" name="button">Get Pokemon</button> </div>
+            </div>
           </div>
 
           <!--Pokemon Info-->
-          <div class="pokemon-info col-sm">
-            <div id="pokemon-name"></div>
-            <div id="pokemon-image-div"><img id="pokemon-image" src="" alt=""></div>
-
+          <div class="pokemon-info col-sm card">
+            <div class="card-body">
+              <div><h1 class="card-title" id="pokemon-name"></h1></div>
+              <div id="pokemon-image-div"><img id="pokemon-image" src="" alt=""></div>
+            </div>
           </div>
         </div>
       </div>

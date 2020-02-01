@@ -2,6 +2,10 @@ body {
   background-color: #991101;
 }
 
+.pokemon-search, .pokemon-info{
+  text-align: center;
+}
+
 .container-fluid {
   padding-top: 2rem;
 }
