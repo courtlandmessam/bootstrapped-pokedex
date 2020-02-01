@@ -6,7 +6,7 @@ window.addEventListener('load', ()=> {
 
 
     function getPokemon() {
-      var pokemon = document.getElementById('pokemon-request').value;
+      var pokemon = document.getElementById('pokemon-request').value.toLowerCase();
 
 
       let api = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
@@ -17,6 +17,7 @@ window.addEventListener('load', ()=> {
           //Checks to see if input is a valid pokemon
           if(!response.ok) {
             document.getElementById('pokemon-name').innerHTML = "Not a valid Pokemon";
+            document.getElementById("pokemon-image").src = "";
           } else {
             return response.json();
           }
