@@ -25,7 +25,7 @@ window.addEventListener('load', ()=> {
         })
         .then(data => {
           document.getElementById('pokemon-name').innerHTML = data.name.charAt(0).toUpperCase() + data.name.slice(1);
-          document.getElementById("pokemon-image").src = data.sprites.front_female;
+          document.getElementById("pokemon-image").src = data.sprites.front_default;
           console.log(data.name);
         })
     }
