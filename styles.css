@@ -1,5 +1,12 @@
 body {
   background-color: #991101;
+  font-family: 'VT323', monospace;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 75px;
 }
 
 .container-fluid {
@@ -9,10 +16,11 @@ body {
   text-align: center;
 }
 
-#pokemon-request {
-  margin-top: 1.5rem;
-}
-
 #search-pokemon {
   margin-top: 2rem;
+}
+
+#pokemon-image {
+  width: 15rem;
+  height: 15rem;
 }
