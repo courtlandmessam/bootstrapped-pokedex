@@ -18,6 +18,7 @@ window.addEventListener('load', ()=> {
           if(!response.ok) {
             document.getElementById('pokemon-name').innerHTML = "Not a valid Pokemon";
             document.getElementById("pokemon-image").src = "";
+            document.getElementById("pokemon-ability").innerHTML = "";
           } else {
             return response.json();
           }
@@ -28,7 +29,6 @@ window.addEventListener('load', ()=> {
           document.getElementById("pokemon-image").src = data.sprites.front_default;
           document.getElementById('pokemon-ability').innerHTML = `Ability: ${data.abilities[0].ability.name.charAt(0).toUpperCase() +
             data.abilities[0].ability.name.slice(1)}`;
-
         })
     }
 

@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="border-styles.css">
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <title>Bootstrapped Pokedex</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
@@ -17,13 +18,13 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="container">
-        <h1>Who's that Pokemon?</h1>
-        <div class="row">
+      <div class="container pxl-border container-full">
+        <h1 class="pxl-border">Who's that Pokemon?</h1>
+        <div class="top-row row">
 
           <!--Search-->
           <div class="pokemon-search col-sm">
-            <div class="card">
+            <div class="pxl-border">
               <div class="card-body">
                 <div><h2 class="card-title">Choose Your Pokemon</h2></div>
                 <div> <input class="form-control" type="text" id="pokemon-request" placeholder="Enter Pokemon"> </div>
@@ -34,7 +35,7 @@
 
           <!--Pokemon Info-->
           <div class="pokemon-info col-sm">
-            <div class="card">
+            <div class="pxl-border">
               <div class="card-body">
                 <div id="pokemon-image-div"><img class="card-img-top" id="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt=""></div>
                 <div><h2 class="card-title" id="pokemon-name">Bulbasaur</h2></div>

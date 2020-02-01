@@ -4,13 +4,21 @@ body {
 }
 
 h1 {
-  color: white;
   text-align: center;
   font-size: 75px;
 }
 
 .container-fluid {
   padding-top: 2rem;
+}
+
+.container-full {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.top-row {
+  margin-top: 3rem;
 }
 .pokemon-search, .pokemon-info{
   text-align: center;
@@ -23,4 +31,10 @@ h1 {
 #pokemon-image {
   width: 15rem;
   height: 15rem;
+}
+
+@media (max-width: 575px) {
+  .pokemon-search {
+    margin-bottom: 3rem;
+  }
 }
